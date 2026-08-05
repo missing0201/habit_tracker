@@ -2,10 +2,6 @@ import { useState, type SubmitEvent } from "react";
 import { Button } from "./Button";
 import { useHabits } from "../context/UseHabits";
 
-type HabitFormProps={
-  addHabit: (name: string)=>void
-}
-
 export function HabitForm(){
   const [name,setName]=useState("")
   const { addHabit }= useHabits()
